@@ -19,7 +19,6 @@ public class MemberSaveControllerV2 implements ControllerV2 {
         int age = Integer.parseInt(request.getParameter("age"));
 
         Member member = new Member(username, age);
-
         memberRepository.save(member);
 
         request.setAttribute("member", member);
