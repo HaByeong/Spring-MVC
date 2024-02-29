@@ -66,7 +66,7 @@ public class FrontControllerServletV5 extends HttpServlet {
         //어댑터 찾아오기
         MyHandlerAdapter adapter = getHandlerAdapter(handler);
 
-        ModelView mv = adapter.handle(request, response, handler);
+         ModelView mv = adapter.handle(request, response, handler);
 
         String viewName = mv.getViewName();
         MyView myView = viewResolver(viewName);
